@@ -58,18 +58,28 @@ static void SklenikViaceroSenzorov()
     Console.WriteLine($"V skleniku je priemerna teplota {priemernaTeplota}°C, priemerna vlhkost {priemernaVlhkost}% a svetlo je {(svetloZapnute ? "zapnute" : "vypnute")}.");
 }
 
-static void ViaceroSklenikov()
+static void ViaceroSklenikovViaceroSenzorov()
 {
-    double teplotaSklenik1 = 36.6;
-    int vlhkostSklenik1 = 88;
-    bool svetloZapnuteSklenik1 = true;
+    double sklenik1Teplota1 = 36.6;
+    double sklenik1Teplota2 = 37.2;
+    int sklenik1Vlhkost1 = 88;
+    int sklenik1Vlhkost2 = 85;
+    bool sklenik1SvetloZapnute = true;
 
-    double teplotaSklenik2 = 34.5;
-    int vlhkostSklenik2 = 92;
-    bool svetloZapnuteSklenik2 = false;
+    double sklenik2Teplota1 = 34.5;
+    double sklenik2Teplota2 = 35.0;
+    int sklenik2Vlhkost1 = 90;;
+    int sklenik2Vlhkost2 = 92;
+    bool sklenik2SvetloZapnute = false;
 
-    Console.WriteLine($"Sklenik 1: Teplota {teplotaSklenik1}°C, Vlhkost {vlhkostSklenik1}%, Svetlo {(svetloZapnuteSklenik1 ? "zapnute" : "vypnute")}");
-    Console.WriteLine($"Sklenik 2: Teplota {teplotaSklenik2}°C, Vlhkost {vlhkostSklenik2}%, Svetlo {(svetloZapnuteSklenik2 ? "zapnute" : "vypnute")}");
+    double sklenik1PriemernaTeplota = (sklenik1Teplota1 + sklenik1Teplota2) / 2;
+    double sklenik1PriemernaVlhkost = (sklenik1Vlhkost1 + sklenik1Vlhkost2) / 2.0;
+
+    double sklenik2PriemernaTeplota = (sklenik2Teplota1 + sklenik2Teplota2) / 2;
+    double sklenik2PriemernaVlhkost = (sklenik2Vlhkost1 + sklenik2Vlhkost2) / 2.0;
+
+    Console.WriteLine($"Sklenik 1: Priemerna teplota {sklenik1PriemernaTeplota}°C, priemerna vlhkost {sklenik1PriemernaVlhkost}%, svetlo je {(sklenik1SvetloZapnute ? "zapnute" : "vypnute")}.");
+    Console.WriteLine($"Sklenik 2: Priemerna teplota {sklenik2PriemernaTeplota}°C, priemerna vlhkost {sklenik2PriemernaVlhkost}%, svetlo je {(sklenik2SvetloZapnute ? "zapnute" : "vypnute")}.");
 }
 
 
