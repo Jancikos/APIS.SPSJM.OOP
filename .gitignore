@@ -1,0 +1,80 @@
+# Ignore Visual Studio files
+.vs/
+**/bin/
+**/obj/
+
+# Ignore NuGet packages
+*.nuget.props
+*.nuget.targets
+packages/
+
+# Ignore user-specific files
+*.suo
+*.user
+*.userprefs
+*.vspscc
+*.vssscc
+*.vssettings
+*.vsmacros
+
+# Ignore build output
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vsix
+*.builds
+*.pidb
+*.svclog
+*.scc
+**/*.exe
+**/*.msi
+
+# Ignore Resharper files
+_ReSharper*/
+*.resharper*
+*.DotSettings.user
+
+# Ignore Visual Studio code coverage files
+*.coverage
+*.coveragexml
+
+# Ignore TFS files
+$tf/
+
+# Ignore Fakes generated files
+FakesAssemblies/
+
+# Ignore StyleCop files
+StyleCopReport.xml
+
+# Ignore NCrunch files
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# Ignore RIA/Silverlight generated files
+Generated_Code/
+
+# Ignore BuildBundlerMinifier files
+bundleconfig.json
+
+# Ignore Advanced Installer build files
+*-cache/
+*-SetupFiles/
+
+# Uncomment if you have tasks that create the project's static files in wwwroot
+wwwroot/
